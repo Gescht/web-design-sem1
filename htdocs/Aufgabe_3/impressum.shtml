@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Beispielimpressum</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Diese Seite ist eine Testseite für die ersten Anfänge in html und css">
+        <meta name="author" content="Max Mustermann">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS,XML,Fachhochschule, Kiel">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>Test 123</header>
+        <nav class="kopfzeile wrapper-kopf">
+            <a href="#title"> Titel</a>
+            <a href="https://www.google.de/"> Google</a>
+        </nav>
+        <article class="inhalt">
+            <h1 id="title">Beispielimpressum HTML 5</h1>
+
+            <section>
+                <!-- changes the timeformat to abbreviated weekday -->
+                <!--#config timefmt="%a" -->
+                <!-- returns today's day -->
+                <p>Today is <!--#echo var="DATE_LOCAL" --></p>
+                <!-- returns the day the file got last modified -->
+                <p>File last modified: <!--#echo var="Last_Modified" --></p>
+                <!-- returns the file size -->
+                <p>File Size: <!--#fsize file="impressum.shtml" --></p>
+            </section>
+
+            <!-- includes example lorem file -->
+            <!--#include file="lorem1.shtml" -->
+
+        </article>
+        <footer>
+            <p>Max Mustermann, Musterstraße 1, 12345 Musterstadt; <a href="mailto:name@email.com">Em@il</a> <a href="index.html">Hauptseite</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+body {
+    margin: 40px;
+    margin-bottom: 0px;
+}
+
+li {
+    background-color: aqua;
+}
+
+footer {
+    display: block;
+}
+
+.big-font {
+    font-size: 800%;
+}
+
+.seitenleiste {
+}
+
+.inhalt {
+    position: relative;
+}
+
+.kopfzeile {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: "kopfeintrag1 kopfeintrag2 kopfeintrag3 kopfeintrag4";
+}
+
+.wrapper {
+    background-color: #fff;
+    color: #444;
+}
+
+#inhalt-1 {
+    font-style: inherit;
+    font-size: large;
+}
+
+#inhalt-2 {
+    font-style: italic;
+    font-size: medium;
+ }
+
+#inhalt-3 {
+    font-style: normal;
+    font-size: small;
+}
+
+#inhalt-4 {
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+#menue-eintrag1 {
+    grid-area: kopfeintrag1;
+    background-color: bisque;
+}
+
+#menue-eintrag2 {
+    grid-area: kopfeintrag2;
+    background-color: aquamarine;
+}
+#menue-eintrag3 {
+    grid-area: kopfeintrag3;
+    background-color: cornsilk;
+}
+#menue-eintrag4 {
+    grid-area: kopfeintrag4;
+    background-color: ghostwhite;
+}
+
+#unsortierte-liste-div {
+    background-color: aquamarine;
+}
+
+#unsortierte-liste {
+    background-color: cornsilk;
+}
+
+#sortierte-liste-div {
+    background-color: aquamarine;
+}
+
+#sortierte-liste {
+    background-color: bisque;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.tg td {
+    font-size:14px;
+    border-style:solid;
+    border-width:1px;
+    padding:10px 5px;
+}
+
+.tg th {
+    border-style:dotted;
+    font-size:14px;
+    border-width:1px;
+    padding:10px 5px;
+}
+
+.tg .tg-b44r {
+    background-color:#cbcefb;
+}
+
+.tg .tg-d7gl {
+    text-decoration:underline;
+    text-align:right;
+}
+
+.tg .tg-pfso {
+    color:#cb0000;
+}
+
+.tg .tg-wuqm {
+    font-size:20px;
+    background-color:#333;
+    color:#fff;
+}
+
+.tg .tg-lqy6 {
+    text-align:right;
+}
+
+.tg .tg-gr4g {
+    color:#67fd9a;
+}
+
+.tg .tg-ezy4 {
+    font-size:10px;
+    text-align:right;
+}
+
+.tg .tg-2s1i {
+    background-color:#fd6864;
+}
+
+.tg .tg-93t1 {
+    background-color:#68cbd0;
+}
+
+#bild1 {
+    z-index: 1;
+}
+
+#bild2 {
+    position: fixed;
+	left: 50%;
+	top: 50%;
+    z-index: 20;
+	margin-left: -150px;
+	margin-top: -84px;
+}
+
+#testbild1 {
+    width: 100%;
+}

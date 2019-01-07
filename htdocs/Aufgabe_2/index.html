@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Beispielwebseite</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="Diese Seite ist eine Testseite für die ersten Anfänge in html und css">
+		<meta name="author" content="Max Mustermann">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<meta name="keywords" content="HTML,CSS,XML,Fachhochschule, Kiel">
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+		<!-- the header -->
+		<header>Test 123</header>
+		<nav class="kopfzeile wrapper-kopf">
+			<a href="#title"> Titel</a>
+			<a href="#media"> Medien</a>
+			<a href="https://www.google.de/"> Google</a>
+			<a href="#testgif"> Bild</a>
+		</nav>
+		<!-- the content -->
+		<article class="inhalt">
+			<!-- the title -->
+			<h1 id="title">Beispielwebseite HTML 5</h1>
+			<!-- media section -->
+			<section id="media">
+				<!-- star svg graphic -->
+                <svg width="200" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                             style="fill:blue;stroke:orange;stroke-width:4;fill-rule:evenodd;" />
+                </svg>
+				<!-- animated gif -->
+				<img id="testgif" src="img/giphy.gif" alt="Test Gif">
+				<!-- mp4 file -->
+				<video width="480" height="382" controls>
+                    <source src="img/giphy.mp4" type="video/mp4">
+                </video>
+			</section>
+			<!-- forms section -->
+			<section>
+				<!-- this includes the script -->
+				<form method="GET" action="../../cgi-bin/echo.pl">
+				<!--FORM ACTION="http://www.rebol.com/cgi-bin/test-cgi.cgi"-->
+					<fieldset>
+						<!-- the legend -->
+						<legend>User Input</legend>
+						<!-- input for name -->
+						Name:
+						<input title="Name" type="text" name="name" required><br>
+						<!-- input for password -->
+						Passwort:
+						<input title="Passwort" type="password" name="password" required><br>
+						<!-- input for gender -->
+						Gender:<br>
+						<input title="Male" type="radio" name="gender" value="male" checked> Male<br>
+						<input title="Female" type="radio" name="gender" value="female"> Female<br>
+						<input title="Other" type="radio" name="gender" value="other"> Other<br>
+						<!-- input for email -->
+						Email:
+						<input title="Email" type="email" name="email"><br>
+						<!-- input for date -->
+						Date:
+						<input title="Date" type="date" name="date"><br>
+						<!-- submit button -->
+						<input type="image" src="img/images.png" alt="Submit"><br>
+						<!-- reset button -->
+						<input type="reset" name="reset">
+					</fieldset>
+				</form>
+			</section>
+		</article>
+		<!-- the footer -->
+		<footer>
+			<p>Max Mustermann, Musterstraße 1, 12345 Musterstadt; <a href="mailto:name@email.com">Em@il</a> <a href="impressum.shtml">Impressum</a></p>
+		</footer>
+    </body>
+</html>
