@@ -21,11 +21,16 @@
 		<article class="inhalt">
 			<!-- the title -->
 			<h1 id="title">Beispielwebseite HTML 5</h1>
+			<!-- js canvas section-->
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+			</canvas>
 			<!-- info section -->
 			<section id="info">
 				<script type="text/javascript" src="javascript/scripts.js">
 				</script>
 			</section>
+			<!-- js cookie section-->
+			<input type="button" value="View" onClick="showCookie()" />
 			<!-- forms section -->
 			<section>
 				<!-- this includes the script -->
@@ -36,7 +41,7 @@
 						<legend>User Input</legend>
 						<!-- input for name -->
 						Name:
-						<input title="Name" type="text" name="name" required><br>
+						<input title="Name" type="text" name="name" value="John" required><br>
 						<!-- input for password -->
 						Passwort:
 						<input title="Passwort" type="password" name="password" required><br>
@@ -47,7 +52,7 @@
 						<input title="Other" type="radio" name="gender" value="other"> Other<br>
 						<!-- input for email -->
 						Email:
-						<input title="Email" type="email" name="email"><br>
+						<input title="Email" type="email" name="email" value="test@test.test"><br>
 						<!-- input for date -->
 						Date:
 						<input title="Date" type="date" name="date"><br>
@@ -55,6 +60,8 @@
 						<input type="image" src="img/images.png" alt="Submit"><br>
 						<!-- reset button -->
 						<input type="reset" name="reset">
+						<!-- js reset button -->
+						<input type="button" value="Reset-JS" onClick="resetForms(this.form)" />
 					</fieldset>
 				</form>
 			</section>
