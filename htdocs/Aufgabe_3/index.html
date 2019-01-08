@@ -34,8 +34,12 @@
 			<!-- forms section -->
 			<section>
 				<!-- this includes the script -->
-				<form method="GET" action="../../cgi-bin/echo.pl">
+				<!--<form method="GET" action="../../cgi-bin/echo.pl">-->
+				<form name="f1" >
 				<!--FORM ACTION="http://www.rebol.com/cgi-bin/test-cgi.cgi"-->
+					<p>word: <input name="word" type="text">
+						<input value="Go" type="button" onclick="doAjax('http://localhost/Aufgabe_3/echo.pl')"></p>
+					<div id="result"></div>
 					<fieldset>
 						<!-- the legend -->
 						<legend>User Input</legend>

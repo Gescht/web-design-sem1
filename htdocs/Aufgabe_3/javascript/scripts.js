@@ -222,6 +222,26 @@ function resetForms(oForm){
     }
 }
 
+
+function doAjax(strURL){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", strURL, true);
+    xhttp.timeout = 0;
+    xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState == 4 ){
+            updatepage(xhttp.responeText);
+        }
+    }
+    var form = document.forms['f1'];
+    var query = form.word.value;
+    xhttp.send("key="+ query);
+}
+function updatepage(str) {
+        document.getElementById("result").innerHTML = "Result:" + "<br/>" + str;
+}
+
+
 setCookie();
 disp();
 document.write("<BR>");
